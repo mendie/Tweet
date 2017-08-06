@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ListView;
 
 import com.codepath.apps.mysimpletweets.models.Tweet;
@@ -18,7 +19,10 @@ import cz.msebera.android.httpclient.Header;
 
 public class TimelineActivity extends AppCompatActivity {
 
+    public void onComposeAction(MenuItem mi) {
+        // handle click here
 
+    }
 
     private TwitterClient client;
     private ArrayList<Tweet> tweets;
@@ -88,5 +92,22 @@ public class TimelineActivity extends AppCompatActivity {
         populateTimeline();
     }
 
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle presses on the action bar items
+        switch (item.getItemId()) {
+            case R.id.item1:
+                composeMessage();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+
+    private void composeMessage() {
+
+    }
 }
 

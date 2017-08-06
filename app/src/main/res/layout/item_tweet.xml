@@ -2,7 +2,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent">
 
     <ImageView
         android:layout_width="50dp"
@@ -35,5 +37,25 @@
         android:ems="10"
         android:id="@+id/tvBody"
         android:layout_below="@+id/tvUserNamer"
-        android:layout_alignStart="@+id/tvUserNamer" />
-</RelativeLayout>
+        android:layout_alignStart="@+id/tvUserNamer"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:id="@+id/tvRelativeTIme"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="7dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:minHeight="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#E1E8ED" />
+
+    </RelativeLayout>

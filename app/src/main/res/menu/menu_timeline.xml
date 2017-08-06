@@ -10,4 +10,13 @@
     android:icon="@drawable/ic_launcher"
     app:showAsAction="never" />
 
+
+    <item
+        android:id="@+id/item1"
+        android:icon="@drawable/ic_compose"
+        android:onClick="onComposeAction"
+        app:showAsAction="ifRoom"
+        android:title="Compose">
+    </item>
+
 </menu>
